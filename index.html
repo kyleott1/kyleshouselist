@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House Hunt Hub 🏠</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .price-tag {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+    }
+  </style>
+
+  <script>
+    // toggle light/dark mode
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      const icon = document.getElementById("modeIcon");
+      icon.textContent = document.documentElement.classList.contains('dark') ? "🌙" : "☀️";
+    }
+  </script>
+
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition duration-300">
+
+  <div class="max-w-2xl mx-auto p-4">
+
+    <!-- header + mode toggle -->
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-3xl font-bold">our house hunt 🏡</h1>
+      <button onclick="toggleDarkMode()" class="text-2xl focus:outline-none transition">
+        <span id="modeIcon">☀️</span>
+      </button>
+    </div>
+
+    <!-- links list -->
+    <div class="space-y-4">
+
+      <a href="https://www.har.com/homes-for-sale/klein-tx" target="_blank" class="block p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:bg-blue-50 dark:hover:bg-gray-700 transition">
+        🏠 Klein, TX
+        <span class="price-tag text-blue-600 dark:text-blue-400 float-right">$320K+</span>
+      </a>
+
+      <a href="https://www.har.com/homes-for-sale/spring-tx" target="_blank" class="block p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:bg-blue-50 dark:hover:bg-gray-700 transition">
+        🏠 Spring, TX
+        <span class="price-tag text-blue-600 dark:text-blue-400 float-right">$290K+</span>
+      </a>
+
+      <a href="https://www.har.com/homes-for-sale/houston-tx" target="_blank" class="block p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:bg-blue-50 dark:hover:bg-gray-700 transition">
+        🏠 Houston, TX
+        <span class="price-tag text-blue-600 dark:text-blue-400 float-right">$250K+</span>
+      </a>
+
+      <a href="https://www.har.com/homes-for-sale/cypress-tx" target="_blank" class="block p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:bg-blue-50 dark:hover:bg-gray-700 transition">
+        🏠 Cypress, TX
+        <span class="price-tag text-blue-600 dark:text-blue-400 float-right">$310K+</span>
+      </a>
+
+      <a href="https://www.har.com/mapsearch" target="_blank" class="block p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:bg-blue-50 dark:hover:bg-gray-700 transition">
+        🗺️ Map Search
+        <span class="price-tag text-blue-600 dark:text-blue-400 float-right">Browse</span>
+      </a>
+
+    </div>
+
+    <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-6">built by kyle 🖤</p>
+  </div>
+
+</body>
+</html>
